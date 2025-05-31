@@ -127,3 +127,15 @@ input[type="tel"] {
   text-align: center;
   font-style: italic;
 }
+.cadenas{
+  width: 100px;
+  height: auto;
+}
+
+.descripcion{
+  text-transform: uppercase;
+  -webkit-text-fill-color: rgb(12, 14, 14);
+  width: 1px;
+  font-weight: 100;
+  
+}
