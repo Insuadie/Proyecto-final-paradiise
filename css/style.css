@@ -1,9 +1,48 @@
 /* Estilos generales (para index y login) */
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62,5%;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* body {
+  font-size: 1,6rem;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: gray;
+} */
+
+body {
+  /* padding-top: 70px; */
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+h1{
+  font-size: 4,8rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3,2rem;
+}
+
+/* img{
+  max-width: 90%;
+  height: 500px;
+} */
+
+/* Utilidades */
 
 .contenedor{
   max-width: 80rem;
@@ -15,15 +54,54 @@ body {
   text-align: center;
 }
 
-/* img{
-  max-width: 90%;
-  height: 500px;
-} */
+/* Trabajamos sobre el header */
+
+.hero{
+  background-image: url(../imagenes/img3.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
 
 /* Barra de navegación para index.html */
 
-.navbar {
+.navegacion-principal{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacion-principal a{
+  text-decoration: none;
+  color: #DA69B4;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,5);
+  transition: transform 0.5s;
+  transition: color 0.5s;
+}
+
+.navegacion-principal a:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  color: pink;
+}
+
+
+/* .navbar {
   background-color: #3498db;
+  padding: 30px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 15px 30px;
 }
 
@@ -33,16 +111,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.logo {
+/* .logo {
   color: white;
   font-weight: bold;
   font-size: 24px;
   text-decoration: none;
-}
+} */
 
-.nav-links {
+/* .nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -58,7 +136,7 @@ body {
 
 .nav-links li a:hover {
   text-decoration: underline;
-}
+} */
 
 /* Estilos solo para login.html - fondo e inputs */
 
@@ -179,16 +257,64 @@ input[type="tel"] {
   justify-content: center;
 }
 
+.img-estilo{
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.img-estilo a{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.img-estilo:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,4);
+  cursor: pointer;
+}
+
+.boton{
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  background-color: violet;
+  padding: 0.3rem 2rem;
+  border-radius: 10%;
+  transition: transform 1s;
+}
+
+.boton:hover{
+  background-color: lightcoral;
+  cursor: pointer;
+  transform: scale(1.2);
+}
 
 
 .satisfy-regular {
   font-family: "Satisfy", cursive;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   text-shadow: 2px 2px 4px rgb(218, 105, 180);
   font-size: 55px;
   
 }
+
+/* Toda la configuracion del marquee */
+.text-marquee{
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  color: white;
+  background-color: rgb(218, 105, 180);
+  padding: 10px 0;
+  border: 2px solid pink;
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px black;
+}
+
 
 .img-flex img {
   width: 100%;
@@ -207,9 +333,23 @@ input[type="tel"] {
   margin-bottom: 2rem;
 }
 
-.img-flex img:hover {
+/* Hace que solo la imagen se agrende y ponga sombra debajo de la imagen */
+
+/* .img-flex img:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 20px rgba(0,0,0,4);
+  cursor: pointer;
+} */
+
+
+.formato-footer{
+  background-color: black;
+}
+
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 
