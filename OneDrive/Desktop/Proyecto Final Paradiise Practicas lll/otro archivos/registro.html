@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <form class="container" id="registro">
+        <h2>Crear Cuenta</h2>
+
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre" required />
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Apellido" required />
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="Teléfono" required />
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Correo electrónico" required />
+        </div>
+        <div class="form-group">
+            <label for="dni">DNI (por ser una tienda)</label>
+            <input type="text" id="dni" placeholder="DNI" required />
+        </div>
+        <div class="form-group">
+            <label for="usuario">Nombre de Usuario</label>
+            <input type="text" id="usuario" placeholder="Nombre de Usuario" required />
+        </div>
+        <div class="form-group">
+            <label for="registro-password">Contraseña</label>
+            <input type="password" id="registro-password" placeholder="Contraseña" required />
+        </div>
+        <div class="form-group">
+            <label for="confirmar-password">Confirmar Contraseña</label>
+            <input type="password" id="confirmar-password" placeholder="Confirmar contraseña" required />
+        </div>
+        <div class="captcha">
+            Agregar CAPTCHA
+        </div>
+        <button type="button" class="btn" id="btn-crear">Crear Cuenta</button>
+    </form>
+</body>
+</html>

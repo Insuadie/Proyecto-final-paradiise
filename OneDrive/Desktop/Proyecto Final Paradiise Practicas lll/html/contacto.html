@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Principal - Paradiise</title>
+  
+  <!-- Bootstrap CSS CDN -->
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+  <header>
+    <div class="hero">
+    <!-- NAV -->
+      <nav id="navbar" class="navegacion-principal contenedor">
+
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+
+          <!-- Productos con submenú -->
+          <li class="submenu">
+            <a href="otros.html">Productos</a>
+            <ul class="submenu-items">
+              <li><a href="anillos.html">Anillos</a></li>
+              <li><a href="pulseras.html">Pulseras</a></li>
+              <li><a href="collares.html">Collares</a></li>
+              <li><a href="nuevos.html">Novedades</a></li>
+            </ul>
+          </li>
+
+        <!-- Nuestras joyas con submenú -->
+        <li class="submenu">
+          <a href="#">Nuestras_Joyas</a>
+          <ul class="submenu-items">
+            <li><a href="#oro">Oro 18 K</a></li>
+            <li><a href="#plata">Plata 925</a></li>
+            <li><a href="#diamantes">Diamantes</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contacto.html">Contacto</a></li>
+
+        <!-- Cuenta con submenú (ejemplo “perfil – cerrar sesión”) -->
+        <li class="submenu">
+          <a href="#">Cuenta</a>
+          <ul class="submenu-items">
+            <li><a href="login.html">Iniciar sesión</a></li>
+            <li><a href="registro.html">Registrarme</a></li>
+            <li><a href="perfil.html">Mi perfil</a></li>
+            <li><a href="logout.php">Cerrar sesión</a></li>
+          </ul>
+        </li>
+
+        <!-- Carrito (sin submenú) -->
+        <li class="carrito">
+          <a href="carrito.html" aria-label="Carrito">
+            <img src="../imagenes/carrito2.png" alt="Carrito" width="32" height="32" />
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="contenedor-formulario">
+    <form action="" class="formulario sombra">
+        <fieldset>
+            <legend class="text-center">Formulario de contacto</legend>
+
+            <div class="formulario-grid">
+
+                <div class="subformulario">
+                    <label for="nombre_completo">Nombre Completo</label>
+                    <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="subformulario">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                </div>
+
+                <div class="subformulario">
+                    <label for="telefono">teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ingrese un telefono">
+                </div>
+
+                <div class="subformulario">
+                    <label for="mensaje">Mensaje</label>
+                    <input type="textarea" id="mensaje" name="mensaje">
+                </div>
+
+            </div>
+
+            <div class="boton-flex">
+                <button type="submit" class="boton">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+  </main>
+
+  <section>
+    <footer class="formato-footer">
+      <div class="footer-flex-general contenedor">
+        <div class="footer-flex-iconos">
+          <ul class="rrss">
+            <li>
+              <a href="https://wa.me/5491122334455" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/tupagina" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://tiktok.com/@tuusuario" target="_blank" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-flex-enlaces">
+          <a href="">Inicio</a>
+          <a href="">Productos</a>
+          <a href="">Nuestras Joyas</a>
+          <a href="">Contacto</a>
+          <a href="">Cuenta</a>
+        </div>
+      </div>
+      <div>
+        <p class="derechos_reservados">Todos los derechos reservados Paradiise</p>
+      </div>
+  </footer>
+  </section>
+  
+  <script src="../js/script.js"></script>
+
+  <!-- Bootstrap JS y Popper.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
