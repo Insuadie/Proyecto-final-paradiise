@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Principal - Paradiise</title>
+  
+  <!-- Bootstrap CSS CDN -->
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+  <header>
+    <div class="hero">
+    <!-- NAV -->
+      <nav id="navbar" class="navegacion-principal contenedor">
+
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+
+          <!-- Productos con submenú -->
+          <li class="submenu">
+            <a href="otros.html">Productos</a>
+            <ul class="submenu-items">
+              <li><a href="anillos.html">Anillos</a></li>
+              <li><a href="pulseras.html">Pulseras</a></li>
+              <li><a href="collares.html">Collares</a></li>
+              <li><a href="nuevos.html">Novedades</a></li>
+            </ul>
+          </li>
+
+        <!-- Nuestras joyas con submenú -->
+        <li class="submenu">
+          <a href="#">Nuestras_Joyas</a>
+          <ul class="submenu-items">
+            <li><a href="#oro">Oro 18 K</a></li>
+            <li><a href="#plata">Plata 925</a></li>
+            <li><a href="#diamantes">Diamantes</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contacto.html">Contacto</a></li>
+
+        <!-- Cuenta con submenú (ejemplo “perfil – cerrar sesión”) -->
+        <li class="submenu">
+          <a href="#">Cuenta</a>
+          <ul class="submenu-items">
+            <li><a href="login.html">Iniciar sesión</a></li>
+            <li><a href="registro.html">Registrarme</a></li>
+            <li><a href="perfil.html">Mi perfil</a></li>
+            <li><a href="logout.php">Cerrar sesión</a></li>
+          </ul>
+        </li>
+
+        <!-- Carrito (sin submenú) -->
+        <li class="carrito">
+          <a href="carrito.html" aria-label="Carrito">
+            <img src="../imagenes/carrito2.png" alt="Carrito" width="32" height="32" />
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  
+
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Paradiise</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catálogo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="otros.html">Accesorios</a></li>
+              <li><a class="dropdown-item" href="#">Plata 925</a></li>
+              <li><a class="dropdown-item" href="#">Anillos</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- <main class="container mt-4">
+    <h1>Bienvenido a Paradiise</h1>
+    <p>Aquí puedes navegar por nuestras secciones y descubrir nuestros productos.</p>
+
+    <div class="card" style="width: 40rem;">
+      <img src="./imagenes/cadenita.jpg" class="card-img-top" alt="Cadenita de oro" />
+      <img src="./imagenes/arito.jpg" class="card-img-top" alt="Aritos plata 925">
+        <div class="card-body">
+          <h5 class="card-title">Cadenas</h5>
+          <p class="card-text">Elegante y práctico para todos los días.</p>
+          <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+    </div>
+  </main> -->
+
+  <main class="contenedor">
+      <div class="text-center">
+        <h1 class="satisfy-regular">Bienvenido a Paradiise</h1>
+        <marquee class="text-marquee" behavior="scroll" direction="left" scrollamount="5"><p>Aquí puedes navegar por nuestras secciones y descubrir nuestros productos.</p></marquee>
+      </div>
+
+      <div class="img-flex">
+        <div class="img-estilo">
+          <img src="../imagenes/porta.jpg" class="card-img-top" alt="Cadenita de oro" />
+        </div>
+        
+        <div class="img-estilo">
+          <img src="../imagenes/portaa.jpg" class="card-img-top" alt="Aritos plata 925">              
+        </div>  
+
+        <div class="img-estilo">
+          <img src="../imagenes/portaaaa.jpg" class="card-img-top" alt="Aritos plata 925">
+        </div>    
+        
+      </div>
+      
+      <div class="img-flex">
+        <div class="img-estilo">
+          <img src="../imagenes/portaaaaaaa.jpg" class="card-img-top" alt="Cadenita de oro" /> 
+        </div>
+        <div class="img-estilo">
+          <img src="../imagenes/reloj.jpg" class="card-img-top" alt="Aritos plata 925">
+        </div>
+        <img src="../imagenes/reloj.jpgggggg.jpg" class="card-img-top" alt="Aritos plata 925">
+      </div>
+
+      <div class="img-flex">
+        <img src="../imagenes/relojj.jpg" class="card-img-top" alt="Cadenita de oro" />
+        <img src="../imagenes/relojj.jpg" class="card-img-top" alt="Aritos plata 925">
+        <img src="../imagenes/reloj.jpgggggg.jpg" class="card-img-top" alt="Aritos plata 925">
+      </div>
+
+      <div class="img-flex">
+        <img src="../imagenes/imgnueva.jpg" class="card-img-top" alt="Cadenita de oro" />
+        <img src="../imagenes/img2.jpg" class="card-img-top" alt="Aritos plata 925">
+        <img src="../imagenes/img3.jpg" class="card-img-top" alt="Aritos plata 925">
+      </div>
+  </main>
+
+  <section>
+    <footer class="formato-footer">
+      <div class="footer-flex-general contenedor">
+        <div class="footer-flex-iconos">
+          <ul class="rrss">
+            <li>
+              <a href="https://wa.me/5491122334455" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/tupagina" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://tiktok.com/@tuusuario" target="_blank" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-flex-enlaces">
+          <a href="">Inicio</a>
+          <a href="">Productos</a>
+          <a href="">Nuestras Joyas</a>
+          <a href="">Contacto</a>
+          <a href="">Cuenta</a>
+        </div>
+      </div>
+      <div>
+        <p class="derechos_reservados">Todos los derechos reservados Paradiise</p>
+      </div>
+  </footer>
+  </section>
+
+  <script src="../js/script.js"></script>
+
+  <!-- Bootstrap JS y Popper.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
